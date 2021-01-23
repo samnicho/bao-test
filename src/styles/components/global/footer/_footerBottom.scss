@@ -1,0 +1,25 @@
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $black;
+  padding: 25px 30px;
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .footer_bottom__payment {
+    display: flex;
+
+    div {
+      display: flex;
+      width: 55px;
+      justify-content: center;
+
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}

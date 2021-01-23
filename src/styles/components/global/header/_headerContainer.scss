@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .header__msg {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 6px 0;
+    
+    h5 {
+      color: $white;
+    }
+  }
+}
+

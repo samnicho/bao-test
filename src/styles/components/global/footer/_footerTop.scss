@@ -1,0 +1,82 @@
+.footer_top {
+  display: flex;
+  padding: 50px 30px;
+
+  .footer_top__col {
+    flex: 0 0 25%;
+
+    p {
+      margin-bottom: 20px;
+      font-family: $DP400;
+      letter-spacing: .38px;
+    }
+
+    > a {      
+      margin-bottom: 5px;
+      display: block;
+
+      &:hover {
+        h5 {
+          text-decoration: underline;
+        }
+      }
+      
+      h5 {
+        font-family: $DPLight300;
+      }
+    }
+
+    &:first-child {
+      h5 {
+        padding: 10px 0;
+      }
+
+      .social_icons {
+        display: flex;
+
+        div {
+          border-radius: 100%;
+          padding: 10px 0;
+          background-color: lightGray;
+          width: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 5px;
+          
+          img {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .practitioner_login {
+        margin-top: 30px;
+        
+        a {
+          background-color: $black;
+          border: 2px solid $black;
+          display: inline-block;
+          padding: 11px 46px;
+
+          h5 {
+            color: $white;
+            text-transform: uppercase;
+            font-family: $DPMedium500;
+            letter-spacing: 1.17px;
+          }
+
+          &:hover {
+            background-color: $white;
+
+            h5 {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

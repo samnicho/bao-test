@@ -1,0 +1,20 @@
+.features_container__feature {
+  flex: 0 0 15%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+
+    > * {
+      color: $white;
+    }
+
+    h4 {
+      margin-bottom: 15px;
+      letter-spacing: .33px;
+    }
+  }
+}

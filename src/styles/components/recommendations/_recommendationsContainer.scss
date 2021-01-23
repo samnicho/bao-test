@@ -1,0 +1,28 @@
+.recommendations {
+  display: flex;
+  border-right: 1px solid;
+  border-left: 1px solid;
+
+  .recommendations__message,
+  .recommendations__products {
+    flex: 0 0 50%;
+
+    > div {
+      width: 70%;
+    }
+  }
+
+  .recommendations__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 13%;
+  }
+
+  .recommendations__products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

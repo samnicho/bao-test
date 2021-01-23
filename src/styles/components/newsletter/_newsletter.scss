@@ -1,0 +1,27 @@
+.newsletter_signup {
+  position: relative;
+  display: flex;
+
+  .newsletter_signup__bgImg {
+    width: 100%;
+  }
+
+  .newsletter_signup__signUp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      letter-spacing: .29px;
+      margin-bottom: 42px;
+    }
+  }
+}

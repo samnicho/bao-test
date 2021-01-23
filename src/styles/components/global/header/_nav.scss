@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 20%;
+
+  a {
+    padding: 0 20px;
+
+    h4 {
+      text-transform: capitalize;
+      @include hoverUnderline();
+    }
+  }
+}

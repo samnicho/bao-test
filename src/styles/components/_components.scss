@@ -1,0 +1,19 @@
+/* global */
+@import "global/header/headerContainer";
+@import "global/header/nav";
+@import "global/header/siteTools";
+@import "global/footer/footerContainer";
+@import "global/footer/footerTop";
+@import "global/footer/footerBottom";
+
+/* page components */
+@import "recommendations/recommendationsContainer";
+@import "recommendations/message";
+@import "recommendations/emailResults";
+@import "recommendations/product";
+@import "newsletter/newsletter";
+@import "features/featuresContainer";
+@import "features/feature";
+
+/* reusable */
+@import "reusable/emailInput";

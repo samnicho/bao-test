@@ -1,0 +1,39 @@
+.email_results {
+  width: 80%;
+  
+  .email_results__newsletter {
+    display: flex;
+
+    label {
+      display: flex;
+
+      input {
+        display: none;
+
+        &:checked ~ .checkbox:after {
+          width: 82%;
+          height: 85%;
+        }
+      }
+  
+      .checkbox {
+        border: 1px solid $black;
+        border-radius: 0;
+        height: 13px;
+        flex: 0 0 13px;
+        margin: 3px 10px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+          content: '';
+          width: 0%;
+          height: 0%;
+          transition: 100ms;
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
