@@ -1,8 +1,10 @@
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 
   .container {
     margin: 0 auto;
+    width: 1440px;
 
     > div {
       width: 90%;

@@ -1,21 +1,25 @@
 @mixin hoverUnderline() {
-  position: relative;
+  h4 {
+    position: relative;
 
-  &:after {
-    content: "";
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    transition: 250ms;
-    border-bottom: 1px solid $black;
-  }
-
-  &:hover {
     &:after {
-      opacity: 1;
-      bottom: 0;
+      content: "";
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      bottom: -5px;
+      left: 0;
+      transition: 250ms;
+      border-bottom: 1px solid $black;
+    }
+  }
+  
+  &:hover {
+    h4 {
+      &:after {
+        opacity: 1;
+        bottom: 0;
+      }
     }
   }
 }
