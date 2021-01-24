@@ -7,7 +7,9 @@ const Header = `
   <div class='header'>
     <div class='header__top'>
       ${Nav}
-      <img src="${imgPath('./dermatologyLogo.png')}">
+      <div class="header__logo">
+        <img src="${imgPath('./dermatologyLogo.png')}">
+      </div>
       ${SiteTools}
     </div>
     <div class='header__msg'>

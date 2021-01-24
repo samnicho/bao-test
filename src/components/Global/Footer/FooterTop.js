@@ -4,13 +4,15 @@ const FooterTop = `
   <section class="footer_top">
     <div class="footer_top__col">
       <img src="${imgPath('./images/logos/footerLogo.png')}" />
-      <h5>Follow us on social media</h5>
-      <div class="social_icons">
-        <div>
-          <img src="${imgPath('./icons/fb.svg')}" />
-        </div>
-        <div>
-          <img src="${imgPath('./icons/instagram.svg')}" />
+      <div class="social">
+        <h5>Follow us on social media</h5>
+        <div class="social__icons">
+            <a href="#">
+              <img src="${imgPath('./icons/fb.svg')}" />
+            </a>
+            <a href="#">
+              <img src="${imgPath('./icons/instagram.svg')}" />
+            </a>
         </div>
       </div>
     </div>
@@ -43,7 +45,7 @@ const FooterTop = `
             Practitioner Login
           </h5>
         </a>
-      <div>
+      </div>
     </div>
   </section>
 `;

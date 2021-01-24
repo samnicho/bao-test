@@ -15,13 +15,36 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
+    @media(max-width: $desktop) {
+      width: 100%;
+    }
+
     h1 {
       margin-bottom: 10px;
+      
+      @media(max-width: $desktop) {
+        margin-bottom: 0;
+      }
     }
 
     h5 {
       letter-spacing: .29px;
       margin-bottom: 42px;
+
+      @media(max-width: $desktopLrg) {
+        margin-bottom: 25px;
+      }
+
+      @media(max-width: $desktop) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .emailInput {
+      @media(max-width: $desktop) {
+        width: 350px;
+        margin: 15px auto;
+      }
     }
   }
 }

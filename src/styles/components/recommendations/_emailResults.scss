@@ -1,5 +1,6 @@
 .email_results {
   width: 80%;
+  max-width: 360px;
   
   .email_results__newsletter {
     display: flex;
@@ -30,7 +31,7 @@
           content: '';
           width: 0%;
           height: 0%;
-          transition: 100ms;
+          transition: all 100ms ease;
           background-color: $black;
         }
       }

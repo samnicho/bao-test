@@ -4,7 +4,15 @@ html {
 
   .container {
     margin: 0 auto;
-    width: 1440px;
+    width: $desktopLrg;
+
+    @media(max-width: $desktopLrg) {
+      width: $desktop;
+    }
+
+    @media(max-width: $desktop) {
+      width: $tablet;
+    }
 
     > div {
       width: 90%;

@@ -1,6 +1,10 @@
 .message {
   padding-bottom: 60px;
 
+  @media(max-width: $desktopLrg) {
+    padding-bottom: 40px;
+  }
+
   h1 {
     padding-bottom: 30px;
   }

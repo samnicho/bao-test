@@ -7,7 +7,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
+    @media(max-width: $desktopLrg) {
+      flex-wrap: wrap;
+    }
+
+    .header__logo {
+      @media(max-width: $desktopLrg) {
+        flex: 0 0 100%;
+        order: -1;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
   }
+
   
   .header__msg {
     display: flex;

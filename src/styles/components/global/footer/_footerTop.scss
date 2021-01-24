@@ -2,16 +2,25 @@
   display: flex;
   padding: 50px 30px;
 
+  @media (max-width: $desktop) {
+    flex-wrap: wrap;
+    padding: 40px 30px;
+  }
+
   .footer_top__col {
     flex: 0 0 25%;
+
+    @media (max-width: $desktop) {
+      flex: 0 0 33%;
+    }
 
     p {
       margin-bottom: 20px;
       font-family: $DP400;
-      letter-spacing: .38px;
+      letter-spacing: 0.38px;
     }
 
-    > a {      
+    > a {
       margin-bottom: 5px;
       display: block;
 
@@ -20,32 +29,63 @@
           text-decoration: underline;
         }
       }
-      
+
       h5 {
         font-family: $DPLight300;
       }
     }
 
     &:first-child {
-      h5 {
-        padding: 10px 0;
+      @media (max-width: $desktop) {
+        flex: 1 0 100%;
+        display: flex;
+        padding-top: 35px;
+        align-items: center;
+        order: 4;
       }
 
-      .social_icons {
-        display: flex;
-
-        div {
-          border-radius: 100%;
-          padding: 10px 0;
-          background-color: lightGray;
-          width: 40px;
+      .social {
+        @media (max-width: $desktop) {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 5px;
-          
-          img {
-            padding: 0 10px;
+          flex-direction: column;
+          padding-left: 30px;
+        }
+
+        h5 {
+          padding: 10px 0;
+
+          @media (max-width: $desktop) {
+            padding: 0 0 10px;
+          }
+        }
+
+        .social__icons {
+          display: flex;
+
+          a {
+            border-radius: 100%;
+            padding: 10px 0;
+            background-color: lightGray;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+
+            &:hover {
+              img {
+                transform: scale(1.2);
+              }
+            }
+
+            @media (max-width: $desktop) {
+              padding: 6px 0;
+              width: 32px;
+            }
+            img {
+              transition: all 250ms ease;
+              max-width: 50%;
+            }
           }
         }
       }
@@ -54,12 +94,16 @@
     &:last-child {
       .practitioner_login {
         margin-top: 30px;
-        
+
         a {
           background-color: $black;
           border: 2px solid $black;
           display: inline-block;
           padding: 11px 46px;
+
+          @media (max-width: $desktopLrg) {
+            padding: 11px 20px;
+          }
 
           h5 {
             color: $white;
