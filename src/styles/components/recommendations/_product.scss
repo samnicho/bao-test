@@ -55,14 +55,20 @@
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    background: linear-gradient(to bottom, transparent 50%, $black 50%);
+    background-size: 100% 200%;
+    background-position: left top;
+
+    @include hoverSlideUp($black);
 
     h5 {
       text-transform: uppercase;
       font-family: $DPMedium500;
+      position: relative;
+      z-index: 1;
     }
 
     &:hover {
-      background-color: $black;
       cursor: pointer;
 
       h5 {

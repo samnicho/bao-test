@@ -14,7 +14,9 @@ const SiteTools = `
     </a>
     <a class="site_tools__bag" href="#">
       <h4>Bag</h4>
-      <h5>3</h5>
+      <div>
+        <h5>3</h5>
+      </div>
     </a>
   </div>
 `;
